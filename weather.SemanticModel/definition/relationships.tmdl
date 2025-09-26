@@ -1,0 +1,164 @@
+relationship b53e6d58-fee1-430a-96b8-79bba56ce435
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Weather_report_1.'location.localtime'
+	toColumn: LocalDateTable_474ecd24-e9ba-424a-8a53-732d3bb1aed8.Date
+
+relationship 114b46f0-0187-4e50-972d-3692d0e96598
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Weather_report_1.'current.last_updated'
+	toColumn: LocalDateTable_e7158eb0-40e8-41ce-aaf1-f0df522643bc.Date
+
+relationship 82c4c00e-6210-47f5-898f-4c5f50f70139
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Weather_report_1.'forecast.forecastday.date'
+	toColumn: LocalDateTable_d5a3c43f-369c-444a-a94f-2b11355bc5f6.Date
+
+relationship 346213a7-146e-406f-821a-24cf09188476
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Weather_report_1.'forecast.forecastday.hour.time'
+	toColumn: LocalDateTable_378cfd22-6770-4e5e-b18f-3eac07db418e.Date
+
+relationship 467c16db-4e1f-43db-a0c5-73ed63f45ce6
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Weather_report_Birmingham.'location.localtime'
+	toColumn: LocalDateTable_5b6ea346-8c80-407d-9f10-30a18d79af5f.Date
+
+relationship 6b7071bc-5d7f-4252-bb25-8db5332b2e6b
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Weather_report_Birmingham.'current.last_updated'
+	toColumn: LocalDateTable_f3662bed-8c25-4c98-a833-142fb62e0ff4.Date
+
+relationship 907ee6fe-5a47-4bac-85c8-dbdd44cea8d7
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Weather_report_Birmingham.'forecast.forecastday.date'
+	toColumn: LocalDateTable_d02cb354-3fe4-4ede-8231-e7f5d4a57f3f.Date
+
+relationship 497815eb-c2da-4002-b07c-6a190e9b615a
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Weather_report_Birmingham.'forecast.forecastday.hour.time'
+	toColumn: LocalDateTable_1e5755cf-6fcd-4baf-b4d4-45a2132d22bd.Date
+
+relationship ef1ce965-72b8-41c5-85e8-a18faded07e3
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Weather_report_Manchester.'location.localtime'
+	toColumn: LocalDateTable_e3d54463-e145-42f4-b0b6-5d82a1cc948c.Date
+
+relationship 27967dcf-7a9f-4ca4-aae1-3449be960556
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Weather_report_Manchester.'current.last_updated'
+	toColumn: LocalDateTable_4e4fd118-27dd-4c50-b735-e90208c7f61c.Date
+
+relationship c4dfa652-f4fd-45f1-bf3a-6184f8e9d4ca
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Weather_report_Manchester.'forecast.forecastday.date'
+	toColumn: LocalDateTable_e955851b-ac84-44a5-88ad-a37d1b6a6ea4.Date
+
+relationship a1a3ea45-9a2f-4c58-8947-2400a950a5d5
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Weather_report_Manchester.'forecast.forecastday.hour.time'
+	toColumn: LocalDateTable_b1a18310-7e15-445e-a90e-4b69bb0622f7.Date
+
+relationship 6647e381-887b-4b05-b756-c3f190cc4263
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Weather_report_Nottingham.'location.localtime'
+	toColumn: LocalDateTable_8d150959-55da-4ca6-8d11-54b43e507bd5.Date
+
+relationship 734eb445-8fdb-494b-a693-0ae0bc9691be
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Weather_report_Nottingham.'current.last_updated'
+	toColumn: LocalDateTable_07e8a526-f809-4f5f-b9a5-f10c7de4bf89.Date
+
+relationship db146551-46cd-4227-a874-057887061277
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Weather_report_Nottingham.'forecast.forecastday.date'
+	toColumn: LocalDateTable_0e1f145e-8f94-42c6-8592-94a5d12649ce.Date
+
+relationship 1c07b358-1741-4ab0-be99-3f864987af19
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Weather_report_Nottingham.'forecast.forecastday.hour.time'
+	toColumn: LocalDateTable_38a30901-e4cc-4631-97db-6cbdb8ef4c0f.Date
+
+relationship 8405b587-1820-42fa-8297-d98cdb7ca906
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Weather_report_Glasgow.'location.localtime'
+	toColumn: LocalDateTable_aaa22701-cf0a-422d-8397-ff953a9a1930.Date
+
+relationship 8157daac-da69-449e-bb6e-79a0fc78ec0c
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Weather_report_Glasgow.'current.last_updated'
+	toColumn: LocalDateTable_b8835c2b-a52d-4d9c-89b2-008d35b17f8c.Date
+
+relationship a840e9e1-0ed9-485e-b214-313a738398e8
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Weather_report_Glasgow.'forecast.forecastday.date'
+	toColumn: LocalDateTable_2e1419e5-1160-480a-bff6-5a4bb1f0f782.Date
+
+relationship d46e5ddb-6219-4484-8f61-7e226cc22c26
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Weather_report_Glasgow.'forecast.forecastday.hour.time'
+	toColumn: LocalDateTable_d912f0af-cd6d-4c78-9fd7-77689496349a.Date
+
+relationship dde12896-e4f5-47b5-819d-c78314885b54
+	joinOnDateBehavior: datePartOnly
+	fromColumn: MasterTable.'location.localtime'
+	toColumn: LocalDateTable_aebc1f20-a52f-4a2e-b757-4f359f39c7bd.Date
+
+relationship b6030cac-299c-4048-8716-9d1bdf2778f4
+	joinOnDateBehavior: datePartOnly
+	fromColumn: MasterTable.'current.last_updated'
+	toColumn: LocalDateTable_d65c1085-a89b-4db9-a105-6b86e900accf.Date
+
+relationship a4e086d6-8526-4dab-a7ba-e05d7bcef172
+	joinOnDateBehavior: datePartOnly
+	fromColumn: MasterTable.'forecast.forecastday.date'
+	toColumn: LocalDateTable_790578a3-d7fd-482f-b6e3-affadd08c336.Date
+
+relationship 84998a16-99a5-498b-b95f-1629cd4260a2
+	joinOnDateBehavior: datePartOnly
+	fromColumn: MasterTable.'forecast.forecastday.hour.time'
+	toColumn: LocalDateTable_29d6fb5e-9a66-4561-b946-f39fb2ffddec.Date
+
+relationship 871ed3f1-2475-4af1-ad9b-d4fbfe8b688b
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Current.'location.localtime'
+	toColumn: LocalDateTable_43a81f47-3295-40ca-ae41-340e1e7e5b6c.Date
+
+relationship 7959fc95-0fad-4690-a63e-c5c6fb1b31b0
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Current.'current.last_updated'
+	toColumn: LocalDateTable_3061b615-3cb9-4c5c-a2ee-99fe5f132893.Date
+
+relationship fdf4c5eb-65d4-4a22-8f34-5a559ae45cf3
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Forecast_by_day.'location.localtime'
+	toColumn: LocalDateTable_de9ea630-cb8d-475d-b8ed-9648ab3e453c.Date
+
+relationship bef2f6c5-fc77-45d1-aaff-0a5af5709ffd
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Forecast_by_day.'forecast.forecastday.date'
+	toColumn: LocalDateTable_dac05772-9f4e-4aee-a581-ca11060bdf4b.Date
+
+relationship 8a837fdd-0d1c-47a0-a7e4-c4764c12299d
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Forecast_by_hour.'location.localtime'
+	toColumn: LocalDateTable_be6c64cd-86b7-4662-9bca-d8e8d7919720.Date
+
+relationship 72eb34fb-be96-4d23-b9a9-c133521eee00
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Forecast_by_hour.'forecast.forecastday.hour.time'
+	toColumn: LocalDateTable_27bae6c1-6141-4ad3-b008-c95a83ec62b8.Date
+
+relationship 5391a36a-b921-3ff1-863b-644fa478b08e
+	fromColumn: Forecast_by_day.'location.name'
+	toColumn: Locations.'location.name'
+
+relationship bc502461-1044-2273-2254-a64a30f5a18e
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: Current.'location.name'
+	toColumn: Locations.'location.name'
+
+relationship c5d94de7-6f67-4d41-52ec-50a09848dae0
+	fromColumn: Forecast_by_hour.'location.name'
+	toColumn: Locations.'location.name'
+

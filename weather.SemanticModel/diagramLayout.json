@@ -1,0 +1,153 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 284.03711617459669,
+            "y": 371.25508940823966
+          },
+          "nodeIndex": "Current",
+          "nodeLineageTag": "bcf5adad-9fc2-4b09-af81-16d6cd31813c",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 364.42428510076422
+          },
+          "nodeIndex": "Forecast_by_day",
+          "nodeLineageTag": "45f22232-4b79-4ff6-976b-56073fdb5462",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 558.92748291449936,
+            "y": 358.64701599059833
+          },
+          "nodeIndex": "Forecast_by_hour",
+          "nodeLineageTag": "68251560-9e32-404a-97be-f598cd9a1df8",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 9
+        },
+        {
+          "location": {
+            "x": 1405.1536099493237,
+            "y": 3.547772101557257
+          },
+          "nodeIndex": "MasterTable",
+          "nodeLineageTag": "87dca57b-ad31-46c5-b059-e0d5f7729662",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 10
+        },
+        {
+          "location": {
+            "x": 1203.0407347690793,
+            "y": 0
+          },
+          "nodeIndex": "Weather_report_1",
+          "nodeLineageTag": "1eac588e-a4cb-4074-b133-fd0179ac9cd6",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 1237.103997442553,
+            "y": 0
+          },
+          "nodeIndex": "Weather_report_Birmingham",
+          "nodeLineageTag": "86a42f0e-13dc-4627-a4e5-7cc602894771",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 1266.207165506165,
+            "y": 0
+          },
+          "nodeIndex": "Weather_report_Glasgow",
+          "nodeLineageTag": "564a33d7-b564-43ab-9cbd-2acdc73d8357",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 1319.4085533113052,
+            "y": 0
+          },
+          "nodeIndex": "Weather_report_Manchester",
+          "nodeLineageTag": "bae653b4-1177-4a63-846a-8396cdeb9140",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 6
+        },
+        {
+          "location": {
+            "x": 1363.3690253921582,
+            "y": 0
+          },
+          "nodeIndex": "Weather_report_Nottingham",
+          "nodeLineageTag": "d7d0cf11-79c4-48bf-9cb4-dcd627aef153",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 7
+        },
+        {
+          "location": {
+            "x": 299.103997442553,
+            "y": 48.309165331296867
+          },
+          "nodeIndex": "Locations",
+          "nodeLineageTag": "e2cd4eeb-892f-4f6a-acbc-d380f9486194",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 8,
+          "expandedHeight": 145
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}
