@@ -1,0 +1,16 @@
+# Power BI files
+*.pbix
+*.pbit
+# Image files
+*.png
+*.jpg
+*.jpeg
+# Temporary files
+*.tmp
+# OS generated files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+# Logs
+*.log
