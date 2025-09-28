@@ -53,6 +53,7 @@ ref table Forecast_by_hour
 ref table LocalDateTable_be6c64cd-86b7-4662-9bca-d8e8d7919720
 ref table LocalDateTable_27bae6c1-6141-4ad3-b008-c95a83ec62b8
 ref table Locations
+ref table _Measures
 
 ref cultureInfo en-US
 
