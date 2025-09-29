@@ -4,6 +4,15 @@ table _Measures
 	measure Curr_temp_C = SUM('Current'[current.temp_c])&" °C"
 		lineageTag: bbd22fb5-3159-41c1-9f24-92db8c3002c9
 
+	measure Last_Updated_Date_Curr = "Last Updated, "&FORMAT(FIRSTNONBLANK('Current'[current.last_updated],""), "dd mmm")
+		lineageTag: 4e34b419-9fbe-4333-85e5-f852b07b3ece
+
+	measure Wind_Speed = SUM('Current'[current.wind_mph])&" mph"
+		lineageTag: 3212232e-99c4-478f-86ff-b4281cace4d3
+
+	measure For_temp_C = AVERAGE(Forecast_by_day[forecast.forecastday.day.avgtemp_c])&" °C"
+		lineageTag: 77091cd8-edb5-4e9b-9483-7314ba4427ed
+
 	column Column
 		formatString: 0
 		lineageTag: f5ab71e5-faab-41c4-abcd-1abce8e9cd57

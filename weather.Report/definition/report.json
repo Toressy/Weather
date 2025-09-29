@@ -40,7 +40,7 @@
           "expanded": {
             "expr": {
               "Literal": {
-                "Value": "true"
+                "Value": "false"
               }
             }
           }
@@ -72,6 +72,41 @@
         {
           "name": "Group_1_(61)9038893093480015.png",
           "path": "Group_1_(61)9038893093480015.png",
+          "type": "Image"
+        },
+        {
+          "name": "location_(2)03587118552680335.png",
+          "path": "location_(2)03587118552680335.png",
+          "type": "Image"
+        },
+        {
+          "name": "visibility19998501071529773.png",
+          "path": "visibility19998501071529773.png",
+          "type": "Image"
+        },
+        {
+          "name": "humidity11600565315406042.png",
+          "path": "humidity11600565315406042.png",
+          "type": "Image"
+        },
+        {
+          "name": "rain24943499205575648.png",
+          "path": "rain24943499205575648.png",
+          "type": "Image"
+        },
+        {
+          "name": "thermometer_(1)5750823090563139.png",
+          "path": "thermometer_(1)5750823090563139.png",
+          "type": "Image"
+        },
+        {
+          "name": "uv-index8064151828672422.png",
+          "path": "uv-index8064151828672422.png",
+          "type": "Image"
+        },
+        {
+          "name": "windy6444111343230142.png",
+          "path": "windy6444111343230142.png",
           "type": "Image"
         }
       ]
