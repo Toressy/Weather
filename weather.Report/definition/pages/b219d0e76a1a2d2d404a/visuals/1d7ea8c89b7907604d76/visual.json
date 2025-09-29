@@ -4,10 +4,10 @@
   "position": {
     "x": 428.57364301030822,
     "y": 21.42868215051541,
-    "z": 27,
+    "z": 25000,
     "height": 96.429069677319347,
-    "width": 816.67088640297618,
-    "tabOrder": 27
+    "width": 828.57570981992922,
+    "tabOrder": 24000
   },
   "visual": {
     "visualType": "advancedSlicerVisual",
@@ -75,10 +75,55 @@
                   "Value": "'center'"
                 }
               }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'''Segoe UI'', wf_segoe-ui_normal, helvetica, arial, sans-serif'"
+                }
+              }
             }
           },
           "selector": {
             "id": "default"
+          }
+        },
+        {
+          "properties": {
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "interaction:disabled"
+          }
+        },
+        {
+          "properties": {
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": -0.3
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "interaction:rest"
           }
         }
       ],
@@ -195,6 +240,13 @@
                   "Value": "'aboveValue'"
                 }
               }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'''Segoe UI Semibold'', wf_segoe-ui_semibold, helvetica, arial, sans-serif'"
+                }
+              }
             }
           },
           "selector": {
@@ -259,23 +311,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "a5a1c9153515c2e27620",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Forecast_by_day"
-              }
-            },
-            "Property": "Day_Name"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
   }
 }

@@ -422,13 +422,14 @@ table Current
 
 	column 'current.air_quality.pm10'
 		dataType: double
+		formatString: 0
 		lineageTag: 2714d0a0-cd71-4d49-85f1-f1bf8c11c257
 		summarizeBy: sum
 		sourceColumn: current.air_quality.pm10
 
 		annotation SummarizationSetBy = Automatic
 
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
+		annotation PBI_FormatHint = {"isDecimal":true}
 
 	column 'current.air_quality.us-epa-index'
 		dataType: int64

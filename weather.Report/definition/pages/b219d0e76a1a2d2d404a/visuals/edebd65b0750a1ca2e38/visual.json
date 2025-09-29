@@ -6,15 +6,13 @@
     "y": 293.65450007537817,
     "z": 0,
     "height": 65.8664299234493,
-    "width": 389.70971038040841
+    "width": 389.70971038040841,
+    "tabOrder": 25000
   },
   "visual": {
     "visualType": "advancedSlicerVisual",
     "query": {
       "queryState": {
-        "Tooltips": {
-          "projections": []
-        },
         "Values": {
           "projections": [
             {
@@ -82,7 +80,7 @@
                           [
                             {
                               "Literal": {
-                                "Value": "'Glasgow'"
+                                "Value": "'Birmingham'"
                               }
                             }
                           ]
@@ -424,23 +422,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "244cf2bc62b0d10c1277",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Locations"
-              }
-            },
-            "Property": "location.name"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
   }
 }

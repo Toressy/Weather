@@ -473,8 +473,23 @@ table Forecast_by_day
 
 		annotation SummarizationSetBy = Automatic
 
-	column Day_Name = Format(Forecast_by_day[forecast.forecastday.date], "ddd")
+	column Day_Name = Format(Forecast_by_day[forecast.forecastday.date], "dddd")
 		lineageTag: 24baf972-a95f-442f-9e9d-63b3db65343a
+		summarizeBy: none
+		sortByColumn: 'forecast.forecastday.date'
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column Sunrise_Date = FORMAT(Forecast_by_day[forecast.forecastday.astro.sunrise], "hh:mm AM/PM")
+		lineageTag: 8036a3e8-0925-4aa5-bdd1-27194751c47b
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column Sunset_Day = FORMAT(Forecast_by_day[forecast.forecastday.astro.sunset], "hh:mm AM/PM")
+		lineageTag: eff9af64-626b-41cd-a557-f5c462696b67
 		summarizeBy: none
 
 		annotation SummarizationSetBy = Automatic

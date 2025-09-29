@@ -13,6 +13,10 @@ table _Measures
 	measure For_temp_C = AVERAGE(Forecast_by_day[forecast.forecastday.day.avgtemp_c])&" °C"
 		lineageTag: 77091cd8-edb5-4e9b-9483-7314ba4427ed
 
+	measure Left_value_rain = 100 - SUM(Forecast_by_day[forecast.forecastday.day.daily_chance_of_rain])
+		formatString: 0
+		lineageTag: 07536066-1c0c-475d-ac95-67d7f4f17fa5
+
 	column Column
 		formatString: 0
 		lineageTag: f5ab71e5-faab-41c4-abcd-1abce8e9cd57
