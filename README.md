@@ -1,4 +1,7 @@
-Real-Time Weather Dashboard (Power BI)
+# Real-Time Weather Dashboard (Power BI)
+
+![Screen Recording 2025-09-30 at 18 28 47](https://github.com/user-attachments/assets/d1a5c074-6148-40be-97e4-c51dcd2ed492)
+
 
 This document outlines the technical skills and processes used to develop a dynamic, single-screen weather dashboard built on **Power BI**. The project demonstrates an end-to-end data analysis workflow, from **API data acquisition** to advanced **data visualization**.
 
