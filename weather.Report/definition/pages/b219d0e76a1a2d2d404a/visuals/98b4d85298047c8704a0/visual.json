@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.2.0/schema.json",
-  "name": "01ce6fe2633050b05ae8",
+  "name": "98b4d85298047c8704a0",
   "position": {
-    "x": 889.29030924638948,
-    "y": 421.43074896013638,
-    "z": 36000,
+    "x": 525.00271268762754,
+    "y": 497.62161882863563,
+    "z": 49000,
     "height": 90.476657968842844,
     "width": 86.905210943756941,
-    "tabOrder": 36000
+    "tabOrder": 49000
   },
   "visual": {
     "visualType": "card",
@@ -79,6 +79,22 @@
                   "Value": "'''Segoe UI Semibold'', wf_segoe-ui_semibold, helvetica, arial, sans-serif'"
                 }
               }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measures"
+                        }
+                      },
+                      "Property": "PM10_Colour"
+                    }
+                  }
+                }
+              }
             }
           }
         }
@@ -110,6 +126,38 @@
               "expr": {
                 "Literal": {
                   "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "PM10_Text"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'center'"
                 }
               }
             }

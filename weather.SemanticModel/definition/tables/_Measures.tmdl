@@ -17,6 +17,135 @@ table _Measures
 		formatString: 0
 		lineageTag: 07536066-1c0c-475d-ac95-67d7f4f17fa5
 
+	measure AQI_Colour =
+			
+			VAR AQI = ROUND(SELECTEDVALUE('Current'[current.air_quality.pm10]), 0)
+			RETURN
+				SWITCH(
+					TRUE(),
+					AQI <= 50, "#43d946",
+					AQI <= 154, "#fff570",
+					AQI <= 254, "#ff9800",
+					AQI <= 354, "#d99343",
+					AQI <= 424, "#ff5b0f",
+					"#d95243"
+				)
+		lineageTag: baacd134-81ae-492c-8306-158594085836
+
+	measure CO_Colour =
+			
+			VAR AQI = ROUND(SELECTEDVALUE('Current'[current.air_quality.co]), 0)
+			RETURN
+				SWITCH(
+					TRUE(),
+					AQI <= 50, "#43d946",
+					AQI <= 100, "#fff570",
+					AQI <= 150, "#ff9800",
+					AQI <= 200, "#d99343",
+					AQI <= 300, "#ff5b0f",
+					"#d95243"
+				)
+		lineageTag: 6da3629c-44ef-4885-aa69-d42e406f0287
+
+	measure NO2_Colour =
+			
+			VAR AQI = ROUND(SELECTEDVALUE('Current'[current.air_quality.no2]), 0)
+			RETURN
+				SWITCH(
+					TRUE(),
+					AQI <= 50, "#43d946",
+					AQI <= 100, "#fff570",
+					AQI <= 360, "#ff9800",
+					AQI <= 649, "#d99343",
+					AQI <= 1249, "#ff5b0f",
+					"#d95243"
+				)
+		lineageTag: 8ad755b9-1c72-47a5-930f-8cea36fc9109
+
+	measure O3_Colour =
+			
+			VAR AQI = ROUND(SELECTEDVALUE('Current'[current.air_quality.o3]), 0)
+			RETURN
+				SWITCH(
+					TRUE(),
+					AQI <= 54, "#43d946",
+					AQI <= 70, "#fff570",
+					AQI <= 85, "#ff9800",
+					AQI <= 105, "#d99343",
+					AQI <= 200, "#ff5b0f",
+					"#d95243"
+				)
+		lineageTag: 2173c118-b5b4-4175-83b9-ce4385817959
+
+	measure PM2_5_Colour =
+			
+			VAR AQI = ROUND(SELECTEDVALUE('Current'[current.air_quality.pm2_5]), 0)
+			RETURN
+				SWITCH(
+					TRUE(),
+					AQI <= 12, "#43d946",
+					AQI <= 35.4, "#fff570",
+					AQI <= 55.4, "#ff9800",
+					AQI <= 150.4, "#d99343",
+					AQI <= 250.4, "#ff5b0f",
+					"#d95243"
+				)
+		lineageTag: a9b57697-4427-4cd6-a725-67e21b546be2
+
+	measure SO2_Colour =
+			
+			VAR AQI = ROUND(SELECTEDVALUE('Current'[current.air_quality.so2]), 0)
+			RETURN
+				SWITCH(
+					TRUE(),
+					AQI <= 35, "#43d946",
+					AQI <= 75, "#fff570",
+					AQI <= 185, "#ff9800",
+					AQI <= 304, "#d99343",
+					AQI <= 604, "#ff5b0f",
+					"#d95243"
+				)
+		lineageTag: 5eba376b-ca65-4af3-856a-58aa83b396d4
+
+	measure PM10_Colour =
+			
+			VAR AQI = ROUND(SELECTEDVALUE('Current'[current.air_quality.pm10]), 0)
+			RETURN
+				SWITCH(
+					TRUE(),
+					AQI <= 54, "#43d946",
+					AQI <= 154, "#fff570",
+					AQI <= 254, "#ff9800",
+					AQI <= 354, "#d99343",
+					AQI <= 424, "#ff5b0f",
+					"#d95243"
+				)
+		lineageTag: c1439fe3-d6ca-441c-9159-869fcb5ec4d4
+
+	measure Max_Value = 424
+		formatString: 0
+		lineageTag: aa2e7d42-35be-49aa-b21b-145957daffd5
+
+	measure Left_Value_PM10 = [Max_Value] - SUM('Current'[current.air_quality.pm10])
+		lineageTag: 7a89a21c-ef45-4c49-acaf-3a74c0449ffe
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure PM10_Text =
+			
+			VAR AQI = ROUND(SELECTEDVALUE('Current'[current.air_quality.pm10]), 0)
+			RETURN
+				SWITCH(
+					TRUE(),
+					AQI <= 54, "Good",
+					AQI <= 154, "Moderate",
+					AQI <= 254, "Unhealthy for Sensitive",
+					AQI <= 354, "Unhealthy",
+					AQI <= 424, "Very Inhealthy",
+					"Hazardous"
+				)
+		lineageTag: 18b1e7d5-f63d-4b06-bb40-d65d27f29712
+
 	column Column
 		formatString: 0
 		lineageTag: f5ab71e5-faab-41c4-abcd-1abce8e9cd57
